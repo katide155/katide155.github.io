@@ -82,6 +82,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+	border-radius: 8px;
 }
 
 .btn:hover {
@@ -362,7 +363,7 @@ header {
     }
     .section__subtitle--about {
         grid-column: 1 / -1;
-
+		border-radius: 8px;
         position: relative;
         width: calc(100% + 2em);
         padding-left: 1em;
@@ -392,13 +393,14 @@ header {
     padding: 0;
 	margin: 10px;
 	border-radius: 5%;
-	background-color: var(--clr-accent);
-	background-image: radial-gradient(circle, var(--clr-dark) 4%, var(--clr-accent) 95%);
-	  position: relative;
+	/*background-color: var(--clr-accent);*/
+	background: radial-gradient(circle, var(--clr-dark) 4%, var(--clr-accent) 95%);
+	position: relative;
+	transition: background 2s ease-in-out 1s;
 }
 
 .my-work .portfolio a:hover {
-	background-image: radial-gradient(circle, var(--clr-accent) 4%, var(--clr-dark) 95%);
+	background: radial-gradient(circle, var(--clr-accent) 4%, var(--clr-dark) 95%);
 }
 
 .my-work .portfolio a:focus {
