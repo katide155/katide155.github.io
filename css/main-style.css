@@ -17,7 +17,7 @@ html {
     --fw-reg: 300;
     --fw-bold: 900;
     --clr-light: #fff;
-    --clr-dark: #183C63;
+    --clr-dark: #183C63; 
     --clr-accent: #778513;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -72,21 +72,19 @@ strong {
 
 .btn {
     display: inline-block;
-    padding: .5em 2.5em;
-    background: var(--clr-accent);
+    padding: 0.75em 2.5em;
     color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
 	border-radius: 8px;
+	background: radial-gradient( var(--clr-dark) 4%, var(--clr-accent) 95%);
 }
 
 .btn:hover {
-    transform: scale(1.1);
+   background: radial-gradient(var(--clr-accent) 4%, var(--clr-dark) 95%);
 }
 
 
@@ -323,10 +321,11 @@ header {
 
 .services {
     margin-bottom: 4em;
+
 }
 
 .service {
-    max-width: 500px;
+	width: 350px;
     margin: 0 auto;
 }
 
@@ -393,14 +392,12 @@ header {
     padding: 0;
 	margin: 10px;
 	border-radius: 5%;
-	/*background-color: var(--clr-accent);*/
-	background: radial-gradient(circle, var(--clr-dark) 4%, var(--clr-accent) 95%);
+	background: radial-gradient( var(--clr-dark) 4%, var(--clr-accent) 95%);
 	position: relative;
-	transition: background 2s ease-in-out 1s;
 }
 
 .my-work .portfolio a:hover {
-	background: radial-gradient(circle, var(--clr-accent) 4%, var(--clr-dark) 95%);
+	background: radial-gradient( var(--clr-accent) 4%, var(--clr-dark) 95%);
 }
 
 .my-work .portfolio a:focus {
