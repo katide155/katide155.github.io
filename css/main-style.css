@@ -11,8 +11,9 @@ html {
     scroll-behavior: smooth;
 }
 
+
 :root {
-    --ff-primary: 'Times New Roman', sans-serif;
+    --ff-primary: 'Open Sans', sans-serif;
     --ff-secondary: monospace;
     --fw-reg: 300;
     --fw-bold: 900;
@@ -418,9 +419,9 @@ header {
 	vertical-align: middle;
 	color: var(--clr-light);
   position: absolute;
-  top: 43%;
-   -ms-transform: translateY(-43%);
-  transform: translateY(-43%);
+  top: 42%;
+   -ms-transform: translateY(-42%);
+  transform: translateY(-42%);
 }
 
 .portfolio a:hover .portfolio-info{
